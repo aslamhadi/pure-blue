@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/blog.css">
   {% endif %}
 
+  {% if SOCIAL %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  {% endif %}
+
   {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
   {% endif %}
@@ -59,8 +63,13 @@
   <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
       <div class="header">
-        <a href="{{ SITEURL }}/"><h2 class="brand-title">{{ SITENAME }}</h2></a>
-        <p class="brand-tagline"><a href="https://twitter.com/aslamhadi">@aslamhadi</a>'s notes</p>
+        <p><a href="{{ SITEURL }}/"><h2 class="brand-title">{{ SITENAME }}</h2></a></p>
+        {% if SUBNAME %}  <p class="brand-tagline">{{ SUBNAME }}</p> {% endif %}
+        <p class="social">
+          {% for name, link in SOCIAL %}
+            <a href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-2x"></i></a>
+          {% endfor %}
+        </p>
       </div>
     </div>
 
