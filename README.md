@@ -6,10 +6,11 @@ I use this [pure theme](http://purecss.io/layouts/blog/) and change it to match 
 ## Features
 
 * Responsive
-* CSS minification (via [plugin](https://github.com/aslamhadi/pure-blue))
+* CSS minification (optional via [plugin](https://github.com/aslamhadi/pure-blue))
 * Once you activate the virtualenv, run `pip install -r requirements.txt`
 * Disqus
 * Google Analytics
+* Font Awesome
 
 ## Installation
 
@@ -37,6 +38,10 @@ PLUGINS = ['assets']
 ```
 
 *NOTE: path depends on where you put the plugins
+
+## Additional Configurations in pelicanconf.py
+
+`SUBNAME` : sidebar configuration. More information below the SITENAME
 
 ## Demo
 
