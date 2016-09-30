@@ -1,0 +1,262 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h1, .text-heading1 {
+    font-weight: 200;
+    font-size: 30px !important;
+    line-height: 1.18;
+    margin: 0 0 12px !important;
+}
+
+h2, .text-heading2 {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.17;
+    margin: 0 0 12px;
+}
+
+h3, .text-heading3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    position: relative;
+}
+
+p+h1, ul+h1, table+h1, p+h2, ul+h2, table+h2, p+h3, ul+h3, table+h3, p+h4, ul+h4, table+h4, p+h5, ul+h5, table+h5, p+h6, ul+h6, table+h6 {
+    margin-top: 30px;
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 1em 0;
+}
+
+.post {
+    padding-bottom: 0.5em;
+}
+.post-title {
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+    /*font-family: Georgia, "Cambria", serif; */
+    font-family: 100%/1.625 "Open Sans",HelveticaNeue,Helvetica,Arial,sans-serif;
+    color: #444;
+    line-height: 1.8em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-yui {
+        background: #8156a7;
+    }
+    .post-category-js {
+        background: #129fea;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+/* CUSTOM CSS BY ASLAM */
+
+code {
+    font-style: italic;
+    color: #A52A2A;
+}
+
+pre {
+    font-family: Consolas, Courier, monospace;
+    font-size: 0.8em !important;
+    color: #333;
+    background: rgb(250, 250, 250);
+    margin: 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: block;
+    overflow: auto;
+}
+
+.archivelist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-bottom: 1.5em;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+
+    .header {
+        margin: 80% 2em 0;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+    .highlight {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5em;
+        border-left-width: 1px;
+        border-right-width: 1px;
+    }
+
+    h1, .text-heading1 {
+        font-weight: 200;
+        font-size: 46px;
+        line-height: 1.22;
+        letter-spacing: -.01em;
+        margin: 0 0 12px;
+    }
+
+    h2, .text-heading2 {
+        font-weight: 200;
+        font-size: 29px;
+        line-height: 1.18;
+        margin: 0 0 12px;
+    }
+
+    h3, .text-heading3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.17;
+        margin: 0 0 12px;
+        position: relative;
+    }
+}
