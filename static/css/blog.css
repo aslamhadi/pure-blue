@@ -209,6 +209,15 @@ pre {
     -webkit-overflow-scrolling: touch;
 }
 
+hr {
+    color: #eee;
+    background-color: #eee;
+    height: 1px !important;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 2em 3em 0;
