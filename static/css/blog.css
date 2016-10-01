@@ -64,9 +64,6 @@ p+h1, ul+h1, table+h1, p+h2, ul+h2, table+h2, p+h3, ul+h3, table+h3, p+h4, ul+h4
 .brand-tagline {
     margin: 0;
 }
-.brand-title {
-    text-transform: uppercase;
-}
 .brand-tagline {
     font-weight: 300;
     color: rgb(176, 202, 219);
@@ -220,7 +217,7 @@ pre {
 
     .header {
         margin: 80% 2em 0;
-        text-align: right;
+        text-align: center;
     }
 
     .sidebar {
