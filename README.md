@@ -7,7 +7,6 @@ I use this [pure theme](http://purecss.io/layouts/blog/) and change it to match 
 
 * Responsive
 * CSS minification (optional via [plugin](https://github.com/aslamhadi/pure-blue))
-* Once you activate the virtualenv, run `pip install -r requirements.txt`
 * Disqus
 * Google Analytics
 * Font Awesome
