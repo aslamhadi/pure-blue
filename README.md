@@ -41,7 +41,10 @@ PLUGINS = ['assets']
 
 ## Additional Configurations in pelicanconf.py
 
-`SUBNAME` : sidebar configuration. More information below the SITENAME
+`SUBNAME`: sidebar configuration. More information below the SITENAME
+`DESCRIPTION`: for meta tag information
+`TWITTER_USERNAME`: for meta tag information (twitter card)
+`AVATAR`: for meta tag information
 
 ## Demo
 

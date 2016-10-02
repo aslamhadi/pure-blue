@@ -5,7 +5,11 @@
   <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Commit code blogs">
+  {% if DESCRIPTION %}
+    <meta name="description" content="{{ DESCRIPTION }}">
+  {% else %}
+    <meta name="description" content="Personal blog">
+  {% endif %}
 
   {% if 'assets' in PLUGINS %}
     {% include '_includes/minify_css.html' with context %}

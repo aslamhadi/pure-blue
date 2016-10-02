@@ -13,6 +13,27 @@
 <meta name="tags" content="{{tag}}" />
 {% endfor %}
 
+<meta property="og:site_name" content="{{ SITENAME }}">
+<meta property="og:title" content="{{ article.title }}">
+<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+<meta property="og:description" content="{{ article.summary }}" />
+
+{% if AVATAR %}
+<meta property="og:image" content="{{ AVATAR }}">
+{% endif %}
+
+<meta name="twitter:card" content="summary" />
+
+{% if TWITTER_USERNAME %}
+<meta name="twitter:site" content="{{ TWITTER_USERNAME }}" />
+<meta name="twitter:creator" content="{{ TWITTER_USERNAME }}" />
+{% endif %}
+
+<meta name="twitter:title" content="{{ article.title }}" />
+<meta name="twitter:description" content="{{ article.summary }}" />
+<meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}" />
+<meta name="twitter:domain" content="{{ SITEURL }}" />
+
 {% endblock %}
 
 {% block content %}
