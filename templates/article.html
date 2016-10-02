@@ -52,6 +52,9 @@
         {% for author in article.authors %}
         <a class="post-author" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
         {% endfor %}
+        {% if 'post_stats' in PLUGINS %}
+          &#8226; {{ article.stats['wc'] }} words &#8226; {{ article.stats['read_mins'] }} min read 
+        {% endif %}
       </p>
     </header>
 
