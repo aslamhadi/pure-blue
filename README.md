@@ -6,7 +6,8 @@ I use this [pure theme](http://purecss.io/layouts/blog/) and change it to match 
 ## Features
 
 * Responsive
-* CSS minification (optional via [plugin](https://github.com/aslamhadi/pure-blue))
+* CSS minification (optional via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/assets))
+* Add minutes read, medium like (optional via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats))
 * Disqus
 * Google Analytics
 * Font Awesome
